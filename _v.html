@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>李昭瑩 Chao Ying LI — 航空服務 · 地勤運務 · 客艙服務 · 旅客關懷</title>
+<meta name="description" content="金融客服、櫃檯接待與國際禮儀大使的多重歷練，培養服務熱忱、應變力與跨部門溝通力。熱愛與人接觸、也熱愛旅行，期待在航空第一線發揮。" />
+<meta name="keywords" content="航空業, 地勤, 運務, 空服員, 客服, 旅客服務, 禮儀, 客訴處理, 李昭瑩, Chao Ying LI" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a1a1a'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='white'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<style>
+  :root{
+    --bg:#fafafa; --bg-card:#fff; --bg-dark:#1a1a1a; --accent:#1a1a1a;
+    --text:#2d2d2d; --text-sub:#666; --text-muted:#999; --border:#e5e5e5;
+    --radius-lg:.5rem; --radius-xl:.75rem; --radius-2xl:1rem;
+    --max:1200px;
+    --font:"Inter","Noto Sans TC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  .section{padding:88px 0}
+  section[id]{scroll-margin-top:72px}
+  .eyebrow{font-size:.875rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px}
+  .sec-head{text-align:center;margin-bottom:56px}
+  .sec-head h2{font-size:2rem;font-weight:700;color:var(--text)}
+  .sec-head p{color:var(--text-sub);margin-top:12px;max-width:520px;margin-left:auto;margin-right:auto}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;height:64px;z-index:50;transition:background .3s,box-shadow .3s}
+  nav.scrolled{background:rgba(255,255,255,.92);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--border)}
+  .nav-inner{max-width:var(--max);margin:0 auto;height:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-weight:700;font-size:1.25rem;letter-spacing:-.02em;color:#fff;transition:color .3s}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-size:.9rem;font-weight:500;color:#fff;transition:color .3s,opacity .2s}
+  .nav-links a:hover{opacity:.7}
+  nav.scrolled .brand,nav.scrolled .nav-links a{color:var(--text)}
+  .lang-btn{font-size:.85rem;font-weight:600;border:1px solid rgba(255,255,255,.5);color:#fff;background:transparent;
+    padding:6px 14px;border-radius:var(--radius-lg);cursor:pointer;transition:all .2s}
+  .lang-btn:hover{background:#fff;color:#000}
+  nav.scrolled .lang-btn{border-color:var(--border);color:var(--text)}
+  nav.scrolled .lang-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .hamburger{display:none;background:none;border:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;cursor:pointer;z-index:60}
+  .hamburger span{display:block;height:2px;width:100%;background:#fff;transition:.3s}
+  nav.scrolled .hamburger span{background:var(--text)}
+
+  /* HERO */
+  #hero{background:var(--bg-dark);min-height:100vh;display:flex;align-items:center;overflow:hidden}
+  .hero-grid{display:flex;align-items:center;gap:48px;padding:120px 0 80px}
+  .hero-left{flex:1 1 58%}
+  .hero-right{flex:1 1 42%;display:flex;justify-content:center}
+  .hero-tick{width:32px;height:2px;background:#999;margin-bottom:16px}
+  .hero-eyebrow{font-size:.85rem;letter-spacing:3px;text-transform:uppercase;color:#999;margin-bottom:24px}
+  .hero-left h1{font-size:2.4rem;font-weight:700;color:#fff;line-height:1.32;margin-bottom:22px}
+  .hero-left .lead{font-size:1.02rem;color:#aaa;max-width:540px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 30px;font-weight:600;border-radius:var(--radius-lg);
+    transition:all .2s;cursor:pointer;font-size:.95rem;border:1px solid transparent}
+  .btn-solid{background:#fff;color:#000;border-color:#fff}
+  .btn-solid:hover{background:#000;color:#fff;transform:translateY(-2px)}
+  .btn-ghost{border-color:rgba(255,255,255,.3);color:#fff;background:transparent}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+  .hero-photo{position:relative;width:100%;max-width:360px;aspect-ratio:3/4;border-radius:var(--radius-2xl);overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover}
+  .hero-photo .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;color:#fff;font-size:.8rem;
+    background:linear-gradient(to top,rgba(0,0,0,.75),transparent)}
+
+  /* TRAITS / cards */
+  #traits{background:var(--bg)}
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);padding:30px;
+    transition:all .3s;height:100%}
+  .card:hover{box-shadow:0 12px 30px rgba(0,0,0,.07);transform:translateY(-4px)}
+  .card .ico{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:var(--radius-xl);
+    background:var(--bg);border:2px solid var(--border);color:var(--accent);margin-bottom:18px;transition:all .3s}
+  .card:hover .ico{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .card h3{font-size:1.22rem;font-weight:600;margin-bottom:10px}
+  .card p{color:var(--text-sub);margin-bottom:18px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-size:.75rem;font-weight:500;padding:6px 12px;border-radius:999px;border:1px solid var(--border);color:var(--text-sub);background:var(--bg)}
+
+  /* EXPERIENCE timeline */
+  #experience{background:var(--bg-card)}
+  .timeline{position:relative}
+  .timeline:before{content:"";position:absolute;left:122px;top:6px;bottom:6px;width:2px;background:var(--border)}
+  .tl-item{display:flex;gap:32px;margin-bottom:44px}
+  .tl-date{width:120px;flex-shrink:0;font-size:.85rem;font-weight:500;color:var(--text-muted);padding-top:4px;text-align:right}
+  .tl-dot{flex-shrink:0;width:13px;height:13px;border-radius:50%;border:2px solid var(--border);background:var(--bg-card);margin-top:6px;margin-left:-7px;position:relative;z-index:1}
+  .tl-dot.active{background:var(--accent);border-color:var(--accent)}
+  .tl-body{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-xl);padding:24px 28px}
+  .tl-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:6px}
+  .tl-head h3{font-size:1.18rem;font-weight:600}
+  .pill{font-size:.72rem;padding:4px 12px;border-radius:999px;border:1px solid var(--border);color:var(--text-sub)}
+  .pill.solid{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .tl-org{color:var(--text-sub);margin-bottom:14px}
+  .tl-body ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  .tl-body li{display:flex;gap:8px;align-items:flex-start}
+  .tl-body li:before{content:"▸";color:var(--text-muted);flex-shrink:0}
+
+  /* ETIQUETTE highlight */
+  #etiquette{background:var(--bg)}
+  .etq-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+  .etq-photos{display:grid;grid-template-columns:1fr;gap:18px}
+  .etq-photos figure{border-radius:var(--radius-2xl);overflow:hidden;box-shadow:0 14px 36px rgba(0,0,0,.1)}
+  .etq-photos img{width:100%;height:100%;object-fit:cover}
+  .etq-text h2{font-size:2rem;font-weight:700;margin-bottom:18px}
+  .etq-text p{color:var(--text-sub);margin-bottom:16px;line-height:1.85}
+  .etq-list{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+  .etq-list .row{display:flex;gap:10px;align-items:flex-start;color:var(--text)}
+  .etq-list .row span:first-child{color:var(--accent);font-weight:700}
+
+  /* RECOGNITION */
+  #recognition{background:var(--bg-card)}
+
+  /* TRAVEL */
+  #travel{background:var(--bg-card)}
+  .travel-gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+  .travel-gallery figure{position:relative;border-radius:var(--radius-2xl);overflow:hidden;aspect-ratio:4/5;box-shadow:0 14px 36px rgba(0,0,0,.12)}
+  .travel-gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .travel-gallery figure:hover img{transform:scale(1.04)}
+  .travel-gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px;color:#fff;font-size:.85rem;font-weight:500;
+    background:linear-gradient(to top,rgba(0,0,0,.72),transparent)}
+
+  /* STATS band */
+  #stats{background:var(--bg-dark);padding:64px 0}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .stat{text-align:center;color:#fff}
+  .stat .big{font-size:1.7rem;font-weight:700;line-height:1.2;margin-bottom:8px}
+  .stat .cap{font-size:.85rem;color:#999}
+
+  /* ABOUT */
+  #about{background:var(--bg)}
+  .about-grid{display:flex;gap:56px;align-items:flex-start}
+  .about-photo{flex:0 0 40%}
+  .about-photo figure{border-radius:var(--radius-2xl);overflow:hidden;box-shadow:0 14px 36px rgba(0,0,0,.12)}
+  .about-photo img{width:100%;object-fit:cover}
+  .about-photo .cap{font-size:.8rem;color:var(--text-muted);margin-top:12px;text-align:center}
+  .about-text{flex:1}
+  .about-text h2{font-size:2rem;font-weight:700;margin-bottom:24px}
+  .about-text .story p{color:var(--text);line-height:1.85;margin-bottom:14px}
+  .about-edu{font-size:.9rem;color:var(--text-muted);margin-top:26px}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .skill{font-size:.85rem;padding:6px 14px;border:1px solid var(--border);border-radius:999px;color:var(--text);transition:all .2s;cursor:default}
+  .skill:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+  /* CONTACT */
+  #contact{background:var(--bg-dark);color:#fff;text-align:center}
+  #contact h2{font-size:2rem;font-weight:700;margin-bottom:14px}
+  #contact .sub{color:#aaa;max-width:480px;margin:0 auto 40px}
+  .contact-rows{display:flex;flex-direction:column;gap:14px;max-width:420px;margin:0 auto 36px}
+  .crow{display:flex;align-items:center;justify-content:center;gap:12px;font-size:1.02rem}
+  .crow .em{font-size:1.2rem}
+  .contact-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  footer{background:#111;color:#777;text-align:center;padding:28px 0;font-size:.85rem}
+  footer .heart{display:block;margin-top:6px;font-size:.78rem;color:#555}
+
+  /* responsive */
+  @media (max-width:860px){
+    .nav-links{position:fixed;inset:0;background:var(--bg-dark);flex-direction:column;justify-content:center;gap:28px;
+      opacity:0;pointer-events:none;transition:opacity .3s}
+    .nav-links.open{opacity:1;pointer-events:auto}
+    .nav-links a{color:#fff;font-size:1.4rem}
+    .lang-btn{border-color:rgba(255,255,255,.5);color:#fff}
+    nav.scrolled .nav-links a{color:#fff}
+    .hamburger{display:flex}
+    .hero-grid{flex-direction:column-reverse;text-align:center;gap:36px}
+    .hero-cta{justify-content:center}
+    .hero-left .lead{margin:0 auto}
+    .cards{grid-template-columns:1fr}
+    .timeline:before{display:none}
+    .tl-item{flex-direction:column;gap:8px}
+    .tl-date{text-align:left;width:auto}
+    .tl-dot{display:none}
+    .etq-grid{grid-template-columns:1fr;gap:32px}
+    .stats-grid{grid-template-columns:repeat(2,1fr);gap:32px}
+    .about-grid{flex-direction:column;gap:36px}
+    .about-photo{width:100%}
+  }
+
+  /* scroll reveal (progressive enhancement; visible without JS) */
+  .js .reveal{opacity:0;transform:translateY(26px)}
+  .js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease}
+  .js .cards .reveal.in:nth-child(2){transition-delay:.08s}
+  .js .cards .reveal.in:nth-child(3){transition-delay:.16s}
+  .js .cards .reveal.in:nth-child(4){transition-delay:.24s}
+
+  /* PRINT (download CV via browser print -> Save as PDF) */
+  @media print{
+    nav,.hero-cta,.contact-cta,.lang-btn,.hamburger{display:none!important}
+    #hero{min-height:auto;background:#fff;color:#000}
+    .hero-left h1,.brand{color:#000!important}
+    .hero-eyebrow,.hero-left .lead{color:#444!important}
+    body,#traits,#experience,#etiquette,#about,#stats,#contact{background:#fff!important;color:#000!important}
+    .stat,.stat .cap,#contact .sub,.crow{color:#000!important}
+    .section{padding:24px 0;break-inside:avoid}
+    .card,.tl-body,.etq-photos figure{break-inside:avoid}
+  }
+</style>
+<style>#hero{min-height:auto!important}.reveal{opacity:1!important;transform:none!important}</style></head>
+<body>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">Chao Ying LI</a>
+    <button class="hamburger" id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#traits" data-zh="核心特質" data-en="Strengths">核心特質</a>
+      <a href="#experience" data-zh="工作經歷" data-en="Experience">工作經歷</a>
+      <a href="#etiquette" data-zh="禮儀大使" data-en="Etiquette">禮儀大使</a>
+      <a href="#travel" data-zh="旅行" data-en="Travel">旅行</a>
+      <a href="#about" data-zh="關於我" data-en="About">關於我</a>
+      <a href="#contact" data-zh="聯繫" data-en="Contact">聯繫</a>
+      <button class="lang-btn" id="langToggle">EN</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <div class="hero-tick"></div>
+        <p class="hero-eyebrow" data-zh="航空服務 · 地勤運務 · 客艙服務 · 旅客關懷" data-en="Aviation Service · Ground Ops · Cabin Crew · Passenger Care">航空服務 · 地勤運務 · 客艙服務 · 旅客關懷</p>
+        <h1 data-zh="站在旅客的最前線，<br>把每一次相遇都變成安心。" data-en="At the frontline of every journey —<br>turning each encounter into reassurance.">站在旅客的最前線，<br>把每一次相遇都變成安心。</h1>
+        <p class="lead" data-zh="金融客服、櫃檯接待與國際禮儀大使的多重歷練，培養出服務熱忱、臨場應變與跨部門溝通力。我熱愛與人接觸、也熱愛旅行，期待在航空第一線發揮。" data-en="Shaped by frontline roles across finance customer care, reception desks, and international etiquette ambassadorship — bringing service passion, composure, and cross-team communication. I love meeting people and I love to travel; the aviation frontline is where I want to grow.">金融客服、櫃檯接待與國際禮儀大使的多重歷練，培養出服務熱忱、臨場應變與跨部門溝通力。我熱愛與人接觸、也熱愛旅行，期待在航空第一線發揮。</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="mailto:saturnflow.wendyli@gmail.com?subject=航空業職缺洽詢" data-zh="與我聯繫" data-en="Get in touch">與我聯繫</a>
+          <a class="btn btn-ghost" href="#experience" data-zh="看我的經歷 ↓" data-en="See my experience ↓">看我的經歷 ↓</a>
+          <button class="btn btn-ghost" id="downloadCV" data-zh="下載履歷" data-en="Download CV">下載履歷</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo">
+          <img src="images/headshot.jpg" alt="李昭瑩 Chao Ying LI" />
+          <div class="cap" data-zh="李昭瑩 Chao Ying LI ｜ 航空服務" data-en="Chao Ying LI ｜ Aviation Service">李昭瑩 Chao Ying LI ｜ 航空服務</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAITS -->
+  <section id="traits" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">STRENGTHS</p>
+        <h2 data-zh="我能為旅客與團隊帶來什麼" data-en="What I bring to passengers & the team">我能為旅客與團隊帶來什麼</h2>
+        <p data-zh="航空第一線最需要的人格特質，正是我多年服務歷練累積的核心" data-en="The personal qualities the aviation frontline relies on — built through years of service">航空第一線最需要的人格特質，正是我多年服務歷練累積的核心</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3 data-zh="服務熱忱與親和力" data-en="Service Passion & Warmth">服務熱忱與親和力</h3>
+          <p data-zh="在 SOGO 化妝品櫃台與校園行政櫃檯長期面對面服務人群，習慣以微笑與耐心建立信任。" data-en="Years of face-to-face service at a SOGO cosmetics counter and a campus administration desk — building trust with patience and a genuine smile.">在 SOGO 化妝品櫃台與校園行政櫃檯長期面對面服務人群，習慣以微笑與耐心建立信任。</p>
+          <div class="tags"><span class="tag" data-zh="面對面服務" data-en="Face-to-face service">面對面服務</span><span class="tag" data-zh="親和力" data-en="Approachability">親和力</span><span class="tag" data-zh="細心" data-en="Attentiveness">細心</span></div>
+        </div>
+        <div class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+          <h3 data-zh="旅客權益與客訴處理" data-en="Passenger Rights & Complaint Handling">旅客權益與客訴處理</h3>
+          <p data-zh="於台新銀行擔任聯名卡 PM 實習生，協助客服在「客戶權益」與「公司利益」間取得平衡，謹慎處理以避免主管機關（金管會）申訴。" data-en="As a co-brand card PM intern at Taishin Bank, I helped the service team balance customer rights with company interests, handling cases carefully to prevent regulator complaints.">於台新銀行擔任聯名卡 PM 實習生，協助客服在「客戶權益」與「公司利益」間取得平衡，謹慎處理以避免主管機關（金管會）申訴。</p>
+          <div class="tags"><span class="tag" data-zh="客訴處理" data-en="Complaint handling">客訴處理</span><span class="tag" data-zh="權益平衡" data-en="Balancing interests">權益平衡</span><span class="tag" data-zh="法遵意識" data-en="Compliance mindset">法遵意識</span></div>
+        </div>
+        <div class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3 data-zh="跨部門協作與溝通" data-en="Cross-Team Coordination">跨部門協作與溝通</h3>
+          <p data-zh="主導跨部門客服外撥（call out）專案，協調不同單位資源，確保訊息一致、流程順暢。" data-en="Led a cross-department customer call-out project, aligning resources across teams to keep messaging consistent and processes smooth.">主導跨部門客服外撥（call out）專案，協調不同單位資源，確保訊息一致、流程順暢。</p>
+          <div class="tags"><span class="tag" data-zh="跨部門協作" data-en="Cross-team work">跨部門協作</span><span class="tag" data-zh="主動聯繫" data-en="Proactive outreach">主動聯繫</span><span class="tag" data-zh="流程協調" data-en="Process coordination">流程協調</span></div>
+        </div>
+        <div class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+          <h3 data-zh="危機處理與抗壓" data-en="Crisis Handling & Composure">危機處理與抗壓</h3>
+          <p data-zh="於躍馬企業擔任專案經理，面對客戶與企業負責人培養危機處理與臨場應變，在壓力下保持穩定。" data-en="As a project manager at Jumping Freight, I built crisis-handling and on-the-spot judgment while working with clients and executives — staying composed under pressure.">於躍馬企業擔任專案經理，面對客戶與企業負責人培養危機處理與臨場應變，在壓力下保持穩定。</p>
+          <div class="tags"><span class="tag" data-zh="危機處理" data-en="Crisis handling">危機處理</span><span class="tag" data-zh="抗壓性" data-en="Resilience">抗壓性</span><span class="tag" data-zh="臨場應變" data-en="Adaptability">臨場應變</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">EXPERIENCE</p>
+        <h2 data-zh="工作經歷" data-en="Experience">工作經歷</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2025.01 — 2025.12</div>
+          <div class="tl-dot active"></div>
+          <div class="tl-body">
+            <div class="tl-head"><h3 data-zh="專案經理 Project Manager" data-en="Project Manager">專案經理 Project Manager</h3><span class="pill" data-zh="客戶接待 / 危機處理" data-en="Client reception / Crisis handling">客戶接待 / 危機處理</span></div>
+            <p class="tl-org">躍馬企業 Jumping Freight</p>
+            <ul>
+              <li data-zh="面對客戶與企業負責人，培養危機處理與社交應變能力" data-en="Worked directly with clients and executives, building crisis-handling and social adaptability">面對客戶與企業負責人，培養危機處理與社交應變能力</li>
+              <li data-zh="協調人力與資源，於高壓情境中維持服務穩定" data-en="Coordinated people and resources, keeping service stable under high pressure">協調人力與資源，於高壓情境中維持服務穩定</li>
+              <li data-zh="累積跨單位溝通與專案推進經驗" data-en="Built cross-unit communication and project-driving experience">累積跨單位溝通與專案推進經驗</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2024.07 — 2025.01</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-head"><h3 data-zh="產品經理實習生 PM Intern" data-en="Product Manager Intern">產品經理實習生 PM Intern</h3><span class="pill" data-zh="聯名卡 / 客服協作" data-en="Co-brand card / Customer service">聯名卡 / 客服協作</span></div>
+            <p class="tl-org">台新銀行 Taishin Bank</p>
+            <ul>
+              <li data-zh="負責國泰聯名金融卡產品營運，與客服部門高度協作" data-en="Supported operations of the Cathay co-brand card, working closely with the customer service team">負責國泰聯名金融卡產品營運，與客服部門高度協作</li>
+              <li data-zh="在客戶權益與公司利益間取得平衡，謹慎處理客訴以避免主管機關（金管會）申訴" data-en="Balanced customer rights with company interests, handling complaints carefully to prevent regulator (FSC) escalation">在客戶權益與公司利益間取得平衡，謹慎處理客訴以避免主管機關（金管會）申訴</li>
+              <li data-zh="主導跨部門客服外撥（call out）專案，協調資源與訊息一致" data-en="Drove a cross-department customer call-out project, aligning resources and messaging">主導跨部門客服外撥（call out）專案，協調資源與訊息一致</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date" data-zh="2021 — 2025　在學期間" data-en="2021 — 2025　During studies">2021 — 2025　在學期間</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-head"><h3 data-zh="第一線服務工讀與接待歷練" data-en="Frontline service & reception roles">第一線服務工讀與接待歷練</h3></div>
+            <p class="tl-org" data-zh="校園行政櫃檯 · SOGO 百貨 · 國際大使（中原大學）" data-en="Campus admin desk · SOGO Dept. Store · International Ambassador (CYCU)">校園行政櫃檯 · SOGO 百貨 · 國際大使（中原大學）</p>
+            <ul>
+              <li data-zh="校園行政櫃檯工讀一年：第一線接待師生與訪客，熟悉表單流程與現場排解" data-en="One year at the campus administration desk: frontline reception, form/process handling, and on-site problem-solving">校園行政櫃檯工讀一年：第一線接待師生與訪客，熟悉表單流程與現場排解</li>
+              <li data-zh="SOGO 化妝品櫃台工讀：櫃位銷售與面對面客戶服務，注重儀容與顧客體驗" data-en="SOGO cosmetics counter: counter sales and face-to-face service, with attention to grooming and guest experience">SOGO 化妝品櫃台工讀：櫃位銷售與面對面客戶服務，注重儀容與顧客體驗</li>
+              <li data-zh="國際大使：通過培訓學習美姿美儀與接待禮儀，隨團出團於正式場合接待外賓" data-en="International Ambassador: trained in poise and reception etiquette, serving at formal events to host guests">國際大使：通過培訓學習美姿美儀與接待禮儀，隨團出團於正式場合接待外賓</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETIQUETTE -->
+  <section id="etiquette" class="section">
+    <div class="wrap">
+      <div class="etq-grid">
+        <div class="etq-photos">
+          <figure><img src="images/etiquette-team.jpg" alt="國際大使團隊出團接待" /></figure>
+          <figure><img src="images/etiquette-group.jpg" alt="國際大使正式接待" /></figure>
+        </div>
+        <div class="etq-text">
+          <p class="eyebrow">ETIQUETTE & RECEPTION</p>
+          <h2 data-zh="國際禮儀大使 · 接待經驗" data-en="International Etiquette Ambassador">國際禮儀大使 · 接待經驗</h2>
+          <p data-zh="大學期間通過國際大使選拔與培訓，接受美姿美儀、應對進退與正式場合接待訓練，並隨團出團，於大型活動中代表學校接待貴賓。" data-en="During university I was selected and trained as an international ambassador — learning poise, etiquette, and formal reception — then served on teams hosting VIP guests at large-scale events on behalf of the school.">大學期間通過國際大使選拔與培訓，接受美姿美儀、應對進退與正式場合接待訓練，並隨團出團，於大型活動中代表學校接待貴賓。</p>
+          <p data-zh="這段經歷讓我具備航空服務所需的端莊儀態、團隊紀律與接待應對能力。" data-en="This experience gave me the poise, team discipline, and reception skills that aviation service demands.">這段經歷讓我具備航空服務所需的端莊儀態、團隊紀律與接待應對能力。</p>
+          <div class="etq-list">
+            <div class="row"><span>✓</span><span data-zh="美姿美儀與儀容訓練" data-en="Poise & grooming training">美姿美儀與儀容訓練</span></div>
+            <div class="row"><span>✓</span><span data-zh="正式場合接待與應對進退" data-en="Formal reception & etiquette">正式場合接待與應對進退</span></div>
+            <div class="row"><span>✓</span><span data-zh="團隊出團與紀律協作" data-en="Team deployment & disciplined collaboration">團隊出團與紀律協作</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat"><p class="big" data-zh="中級英檢" data-en="GEPT Inter.">中級英檢</p><p class="cap" data-zh="初試通過 · 語言能力" data-en="First stage passed · Language">初試通過 · 語言能力</p></div>
+        <div class="stat"><p class="big">5+</p><p class="cap" data-zh="第一線服務 / 接待歷練" data-en="Frontline service settings">第一線服務 / 接待歷練</p></div>
+        <div class="stat"><p class="big" data-zh="國際大使" data-en="Ambassador">國際大使</p><p class="cap" data-zh="禮儀與接待培訓" data-en="Etiquette & reception training">禮儀與接待培訓</p></div>
+        <div class="stat"><p class="big">B2C · B2B</p><p class="cap" data-zh="雙端客戶服務經驗" data-en="Dual-side customer experience">雙端客戶服務經驗</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-photo">
+          <figure><img src="images/etiquette-group.jpg" alt="李昭瑩 國際禮儀大使接待" /></figure>
+          <p class="cap" data-zh="國際大使出團接待現場" data-en="On duty as an international ambassador">國際大使出團接待現場</p>
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">ABOUT</p>
+          <h2 data-zh="關於我" data-en="About Me">關於我</h2>
+          <div class="story">
+            <p data-zh="嗨，我是昭瑩。" data-en="Hi, I'm Chao Ying.">嗨，我是昭瑩。</p>
+            <p data-zh="我的服務歷練從第一線開始——在 SOGO 化妝品櫃台與校園行政櫃檯，我學會怎麼面對形形色色的人，把每一次互動都做到細緻。" data-en="My service journey started at the frontline — at a SOGO cosmetics counter and a campus administration desk, I learned how to meet all kinds of people and make every interaction count.">我的服務歷練從第一線開始——在 SOGO 化妝品櫃台與校園行政櫃檯，我學會怎麼面對形形色色的人，把每一次互動都做到細緻。</p>
+            <p data-zh="在台新銀行擔任聯名卡 PM 實習生時，我與客服部門密切合作，學會在「保障客戶權益」與「兼顧公司利益」之間拿捏分寸，謹慎處理每一筆客訴，避免演變成主管機關申訴。" data-en="As a co-brand card PM intern at Taishin Bank, I worked closely with the customer service team and learned to balance protecting customer rights with the company's interests — handling each complaint carefully so it never escalated to a regulator.">在台新銀行擔任聯名卡 PM 實習生時，我與客服部門密切合作，學會在「保障客戶權益」與「兼顧公司利益」之間拿捏分寸，謹慎處理每一筆客訴，避免演變成主管機關申訴。</p>
+            <p data-zh="大學期間我通過國際大使培訓，學習美姿美儀與接待禮儀，隨團出團接待貴賓；在躍馬企業擔任專案經理時，則培養出面對客戶與負責人的危機處理與社交應變。" data-en="In university I trained as an international ambassador, learning poise and reception etiquette and hosting VIP guests on event teams; as a project manager at Jumping Freight, I built crisis-handling and social adaptability while working with clients and executives.">大學期間我通過國際大使培訓，學習美姿美儀與接待禮儀，隨團出團接待貴賓；在躍馬企業擔任專案經理時，則培養出面對客戶與負責人的危機處理與社交應變。</p>
+            <p data-zh="一路走來，我越來越確定自己樂於與人接觸，也熱愛旅行。航空業能讓我接觸來自世界各地的旅客，正是我最想投入的舞台。" data-en="Along the way, I've become certain that I love connecting with people and I love to travel. Aviation lets me meet passengers from all over the world — and that's exactly the stage I want to step onto.">一路走來，我越來越確定自己樂於與人接觸，也熱愛旅行。航空業能讓我接觸來自世界各地的旅客，正是我最想投入的舞台。</p>
+          </div>
+          <p class="about-edu" data-zh="中原大學 · 國際貿易學系（主修）· 資訊管理學系（輔系）· 2021–2025" data-en="Chung Yuan Christian University · International Trade (major) · Information Management (minor) · 2021–2025">中原大學 · 國際貿易學系（主修）· 資訊管理學系（輔系）· 2021–2025</p>
+          <div class="skills">
+            <span class="skill" data-zh="客訴處理" data-en="Complaint handling">客訴處理</span>
+            <span class="skill" data-zh="櫃檯接待" data-en="Reception desk">櫃檯接待</span>
+            <span class="skill" data-zh="美姿美儀" data-en="Poise & etiquette">美姿美儀</span>
+            <span class="skill" data-zh="跨部門協調" data-en="Cross-team coordination">跨部門協調</span>
+            <span class="skill" data-zh="危機處理" data-en="Crisis handling">危機處理</span>
+            <span class="skill" data-zh="中級英檢" data-en="GEPT Intermediate">中級英檢</span>
+            <span class="skill">Excel</span>
+            <span class="skill">Notion</span>
+            <span class="skill">Canva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOGNITION -->
+  <section id="recognition" class="section">
+    <div class="wrap">
+      <div class="etq-grid">
+        <div class="etq-text">
+          <p class="eyebrow">RECOGNITION</p>
+          <h2 data-zh="競賽肯定 · 舞台表達力" data-en="Awards & Stage Presence">競賽肯定 · 舞台表達力</h2>
+          <p data-zh="多次參與全國性商業競賽，上台簡報與答辯，培養公開表達與臨場膽識。在舞台與鏡頭前的穩定台風，正是航空服務面對人群、進行廣播與致意時所需要的。" data-en="Through national-level business competitions — presenting and defending on stage — I built public-speaking confidence and composure. That steadiness in front of an audience is exactly what aviation service calls for when addressing and announcing to passengers.">多次參與全國性商業競賽，上台簡報與答辯，培養公開表達與臨場膽識。在舞台與鏡頭前的穩定台風，正是航空服務面對人群、進行廣播與致意時所需要的。</p>
+          <div class="etq-list">
+            <div class="row"><span>🏆</span><span data-zh="永豐金控校園商業競賽　優選（Top 10 / 160+ 隊）" data-en="SinoPac Campus Business Competition — Merit Award (Top 10 / 160+ teams)">永豐金控校園商業競賽　優選（Top 10 / 160+ 隊）</span></div>
+            <div class="row"><span>🥉</span><span data-zh="國泰飯店觀光事業全國行銷企劃大賽　第三名" data-en="Cathay Hospitality National Marketing Competition — 3rd Place">國泰飯店觀光事業全國行銷企劃大賽　第三名</span></div>
+          </div>
+        </div>
+        <div class="etq-photos">
+          <figure><img src="images/stage.jpg" alt="李昭瑩 上台簡報" /></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAVEL -->
+  <section id="travel" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">TRAVEL</p>
+        <h2 data-zh="我熱愛旅行，世界是最好的課堂" data-en="I love to travel — the world is my classroom">我熱愛旅行，世界是最好的課堂</h2>
+        <p data-zh="旅行讓我習慣面對陌生環境、不同文化與各種突發狀況，也讓我更懂得欣賞每段旅程背後的人與故事——這正是我想投入航空業的初心。" data-en="Travel has taught me to embrace unfamiliar places, different cultures, and the unexpected — and to appreciate the people and stories behind every journey. That's exactly why I want to be part of aviation.">旅行讓我習慣面對陌生環境、不同文化與各種突發狀況，也讓我更懂得欣賞每段旅程背後的人與故事——這正是我想投入航空業的初心。</p>
+      </div>
+      <div class="travel-gallery">
+        <figure>
+          <img src="images/travel-city.jpg" alt="旅行 · 都會夜景" />
+          <figcaption data-zh="現代都會 · 夜景" data-en="Modern metropolis · by night">現代都會 · 夜景</figcaption>
+        </figure>
+        <figure>
+          <img src="images/travel-garden.jpg" alt="旅行 · 人文古蹟" />
+          <figcaption data-zh="人文街區 · 老建築" data-en="Heritage streets · old architecture">人文街區 · 老建築</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <p class="eyebrow" style="color:#999">CONTACT</p>
+      <h2 data-zh="一起聊聊吧" data-en="Let's talk">一起聊聊吧</h2>
+      <p class="sub" data-zh="不論是航空地勤、客艙或客服職缺，歡迎與我聯繫。" data-en="Whether it's ground operations, cabin crew, or customer service — I'd love to hear from you.">不論是航空地勤、客艙或客服職缺，歡迎與我聯繫。</p>
+      <div class="contact-rows">
+        <a class="crow" href="tel:0937096986"><span class="em">📱</span><span>0937-096-986</span></a>
+        <a class="crow" href="mailto:saturnflow.wendyli@gmail.com"><span class="em">📩</span><span>saturnflow.wendyli@gmail.com</span></a>
+        <a class="crow" href="https://tw.linkedin.com/in/wendyli-pm" target="_blank" rel="noopener"><span class="em">💼</span><span>LinkedIn</span></a>
+      </div>
+      <div class="contact-cta">
+        <a class="btn btn-solid" href="mailto:saturnflow.wendyli@gmail.com?subject=航空業職缺洽詢" data-zh="寄信給我" data-en="Email me">寄信給我</a>
+        <button class="btn btn-ghost" id="downloadCV2" data-zh="下載履歷" data-en="Download CV">下載履歷</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© 2026 李昭瑩 Chao Ying LI</div>
+  <span class="heart" data-zh="以服務的心打造 ✦" data-en="Built with a heart for service ✦">以服務的心打造 ✦</span>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+
+  // scroll reveal
+  (function(){
+    var els = document.querySelectorAll('.sec-head, .card, .tl-item, .etq-text, .etq-photos, .stat, .about-photo, .about-text, .travel-gallery figure');
+    els.forEach(function(el){ el.classList.add('reveal'); });
+    if (!('IntersectionObserver' in window)) { els.forEach(function(el){ el.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold:.15, rootMargin:'0px 0px -8% 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+
+  // nav scroll state
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll); onScroll();
+
+  // mobile menu
+  var hamburger = document.getElementById('hamburger');
+  var navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', function(){ navLinks.classList.toggle('open'); });
+  navLinks.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ navLinks.classList.remove('open'); }); });
+
+  // language toggle
+  var LANG_KEY = 'wl_lang';
+  function setLang(lang){
+    document.documentElement.lang = (lang === 'en') ? 'en' : 'zh-Hant';
+    document.querySelectorAll('[data-zh]').forEach(function(el){
+      var v = (lang === 'en') ? el.getAttribute('data-en') : el.getAttribute('data-zh');
+      if (v !== null) el.innerHTML = v;
+    });
+    document.getElementById('langToggle').textContent = (lang === 'en') ? '中文' : 'EN';
+    try { localStorage.setItem(LANG_KEY, lang); } catch(e){}
+  }
+  document.getElementById('langToggle').addEventListener('click', function(){
+    var cur = (document.documentElement.lang === 'en') ? 'en' : 'zh';
+    setLang(cur === 'en' ? 'zh' : 'en');
+  });
+  (function(){ var saved; try { saved = localStorage.getItem(LANG_KEY); } catch(e){} if (saved === 'en') setLang('en'); })();
+
+  // download CV -> PDF matching the current language
+  function downloadCV(){
+    var en = document.documentElement.lang === 'en';
+    var a = document.createElement('a');
+    a.href = en ? 'resume_en.pdf' : 'resume_zh.pdf';
+    a.download = en ? 'ChaoYingLI_CV.pdf' : '李昭瑩_履歷.pdf';
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+  document.getElementById('downloadCV').addEventListener('click', downloadCV);
+  document.getElementById('downloadCV2').addEventListener('click', downloadCV);
+</script>
+</body>
+</html>
